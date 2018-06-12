@@ -7,5 +7,6 @@
 
 
 const decodeString = (str) => {
-
+  //split the inputed string each time there are bracketts and add the inner value to a string according to the 
+  //number (k). if it's a nested encoder, recurse and add those values to the newStr. 
 }
