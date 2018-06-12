@@ -9,6 +9,13 @@
 // 2¢, 2¢
 
 
+//we want a count of all the ways we can make the correct change rather than the mininum number of coins needed to make the right change.
+
+
+
 const changePossibilities = (amount, denominations) => {
+  // let memory = {}
+  if (amount === 0) return 0
+
 
 }
