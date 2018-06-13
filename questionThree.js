@@ -14,8 +14,19 @@
 
 
 const changePossibilities = (amount, denominations) => {
-  // let memory = {}
-  if (amount === 0) return 0
+
+  let permutations = new Array(amount + 1).fill(0)
+
+  permutations[0] = 1
+
+  denominations.forEach(denom => {
+    for (let i = denom; i <= amount; i++) {
+      let remainder = i - denom
+      permutations[i] += permutations[remainder]
+    }
+  })
+
+  return permutations[amount]
 
 
 }
